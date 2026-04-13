@@ -4,7 +4,7 @@
 
 <nav class="NavBar">
   <div class="logo">
-    <a href="/">Portfolio</a>
+    <h1>Portfolio Web Logica</h1>
   </div>
   <ul class="nav-links">
     <li><a href="/">Home</a></li>
@@ -13,3 +13,45 @@
     <li><a href="/contact">Contact</a></li>
   </ul>
 </nav>
+<style>
+  .NavBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 1),
+      rgba(10, 10, 10, 0.8),
+      transparent
+    );
+    backdrop-filter: blur(15px);
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-links li {
+    margin: 0 10px;
+  }
+  .nav-links li a {
+    color: rgb(143, 143, 143);
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    &:hover {
+      color: rgb(247, 174, 219);
+    }
+  }
+  .logo h1 {
+    font-size: 70px;
+    color: rgb(122, 20, 238);
+    text-decoration: none;
+    text-shadow: 0 0 10px rgba(115, 0, 126, 0.5);
+    transition: all 0.3s ease;
+  }
+</style>
